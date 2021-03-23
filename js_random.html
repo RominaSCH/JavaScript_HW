@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RANDOM NUMBER GAME</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+      <h1>RANDOM NUMBER GAME</h1>
+      <h3 id="value-view">Generate a number between 0 and 0</h3>
+      <div class="Container" >
+        <font size=2 id ="value-view-range">0</font>						  
+        <input oninput = 'ShowSliderValue(this.value);'
+        style = "width:30%;" class="slider_range" type="range" value="0" min="0" max="500"></input>						  
+      </div>
+
+      <h3>Guess the number</h3>
+        <input class="input-number" type="text" placeholder="Number" />
+    <button type="button" onclick="intNumber(); return false;">Play</button>
+    <h3 id="score-check"></h3>
+    <h3 id="result"></h3>
+    <script src="js_random.js"></script>
+  </body>
+<html>
